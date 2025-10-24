@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1: Useful phrases EN | Czech by Lukas</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; padding: 0; }
+    header { background: #4CAF50; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    main { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .question { margin-bottom: 20px; }
+    .question p { font-weight: bold; }
+    label { display: block; margin: 5px 0; cursor: pointer; }
+    input[type=text] { width: 100%; padding: 5px; margin: 5px 0; }
+    button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #45a049; }
+    .result { margin-top: 20px; padding: 15px; background: #e7f3e7; border-left: 5px solid #4CAF50; display: none; }
+</style>
+</head>
+<body>
+<header>
+    <h1>Czech by Lukas</h1>
+</header>
+<main>
+    <h2>Lesson 1: Useful phrases EN</h2>
+    <p>Vyplňte všechny otázky a klikněte na "Odeslat test".</p>
+    <form id="quizForm">
+
+<!-- Czech -> English -->
+<div class="question">
+    <p>1. Dobrý den</p>
+    <input type="text" name="q1">
+</div>
+<div class="question">
+    <p>2. Na shledanou</p>
+    <input type="text" name="q2">
+</div>
+<div class="question">
+    <p>3. Dobrou noc</p>
+    <input type="text" name="q3">
+</div>
+<div class="question">
+    <p>4. prosím</p>
+    <input type="text" name="q4">
+</div>
+<div class="question">
+    <p>5. děkuji</p>
+    <input type="text" name="q5">
+</div>
+<div class="question">
+    <p>6. promiňte</p>
+    <input type="text" name="q6">
+</div>
+<div class="question">
+    <p>7. ano</p>
+    <input type="text" name="q7">
+</div>
+<div class="question">
+    <p>8. ne</p>
+    <input type="text" name="q8">
+</div>
+<div class="question">
+    <p>9. Mluvíte anglicky?</p>
+    <input type="text" name="q9">
+</div>
+<div class="question">
+    <p>10. Kde je restaurace?</p>
+    <input type="text" name="q10">
+</div>
+
+<!-- English -> Czech -->
+<div class="question">
+    <p>11. good morning</p>
+    <input type="text" name="q11">
+</div>
+<div class="question">
+    <p>12. I'm sorry</p>
+    <input type="text" name="q12">
+</div>
+<div class="question">
+    <p>13. Do you speak English?</p>
+    <input type="text" name="q13">
+</div>
+<div class="question">
+    <p>14. bathroom (restroom, toilet)</p>
+    <input type="text" name="q14">
+</div>
+<div class="question">
+    <p>15. men</p>
+    <input type="text" name="q15">
+</div>
+<div class="question">
+    <p>16. women</p>
+    <input type="text" name="q16">
+</div>
+<div class="question">
+    <p>17. Where is a restaurant?</p>
+    <input type="text" name="q17">
+</div>
+<div class="question">
+    <p>18. How much does it cost?</p>
+    <input type="text" name="q18">
+</div>
+<div class="question">
+    <p>19. One beer, please.</p>
+    <input type="text" name="q19">
+</div>
+<div class="question">
+    <p>20. Anything else?</p>
+    <input type="text" name="q20">
+</div>
+
+<!-- Select correct translation -->
+<div class="question">
+    <p>21. "Excuse me"</p>
+    <label><input type="radio" name="q21" value="Na shledanou"> Na shledanou</label>
+    <label><input type="radio" name="q21" value="Promiňte"> Promiňte</label>
+    <label><input type="radio" name="q21" value="Dobrý večer"> Dobrý večer</label>
+</div>
+<div class="question">
+    <p>22. "The check, please!"</p>
+    <label><input type="radio" name="q22" value="Pane vrchní!"> Pane vrchní!</label>
+    <label><input type="radio" name="q22" value="Účet, prosím"> Účet, prosím</label>
+    <label><input type="radio" name="q22" value="Kolik to stojí"> Kolik to stojí</label>
+</div>
+<div class="question">
+    <p>23. "Hundred crowns"</p>
+    <label><input type="radio" name="q23" value="sto korun"> sto korun</label>
+    <label><input type="radio" name="q23" value="jedno pivo, prosím"> jedno pivo, prosím</label>
+    <label><input type="radio" name="q23" value="prosím napište to"> prosím napište to</label>
+</div>
+<div class="question">
+    <p>24. "Where is the bathroom?"</p>
+    <label><input type="radio" name="q24" value="Kde je toaleta?"> Kde je toaleta?</label>
+    <label><input type="radio" name="q24" value="Kde je banka?"> Kde je banka?</label>
+    <label><input type="radio" name="q24" value="Kde je restaurace?"> Kde je restaurace?</label>
+</div>
+<div class="question">
+    <p>25. "What would you like?"</p>
+    <label><input type="radio" name="q25" value="Co si dáte?"> Co si dáte?</label>
+    <label><input type="radio" name="q25" value="Ještě něco?"> Ještě něco?</label>
+    <label><input type="radio" name="q25" value="Dobrý večer"> Dobrý večer</label>
+</div>
+
+<button type="button" onclick="checkQuiz()">Odeslat test</button>
+</form>
+<div class="result" id="result"></div>
+</main>
+
+<script>
+function checkQuiz() {
+    const answersText = {
+        q1: ["good day"],
+        q2: ["goodbye","good bye"],
+        q3: ["good night"],
+        q4: ["please"],
+        q5: ["thank you"],
+        q6: ["excuse me","i beg you pardon","sorry","i am sorry"],
+        q7: ["yes"],
+        q8: ["no"],
+        q9: ["do you speak english?"],
+        q10: ["where is the restaurant?"],
+        q11: ["dobré ráno"],
+        q12: ["lituji","promiňte","promiň","omlouvám se"],
+        q13: ["mluvíte anglicky?"],
+        q14: ["záchod","toaleta"],
+        q15: ["muži"],
+        q16: ["ženy"],
+        q17: ["kde je restaurace?"],
+        q18: ["kolik to stojí?"],
+        q19: ["jedno pivo prosím","jedno pivo, prosím"],
+        q20: ["ještě něco?"]
+    };
+    const answersRadio = {
+        q21: "Promiňte",
+        q22: "Účet, prosím",
+        q23: "sto korun",
+        q24: "Kde je toaleta?",
+        q25: "Co si dáte?"
+    };
+
+    let score = 0;
+    const form = document.getElementById('quizForm');
+
+    // textové odpovědi
+    for(let i=1;i<=20;i++){
+        const val = form['q'+i].value.trim().toLowerCase();
+        if(answersText['q'+i].some(ans => ans.toLowerCase() === val)){
+            score++;
+        }
+    }
+
+    // radio odpovědi
+    for(let i=21;i<=25;i++){
+        const selected = form['q'+i].value;
+        if(selected === answersRadio['q'+i]){
+            score++;
+        }
+    }
+
+    // výsledek
+    const resultDiv = document.getElementById('result');
+    resultDiv.style.display = 'block';
+    resultDiv.innerHTML = `Vaše skóre: ${score} z 25`;
+}
+</script>
+</body>
+</html>
